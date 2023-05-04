@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbarheight">
+
+    <RelativeLayout
+        android:id="@+id/lay_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbarheight"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_menu"
+            android:layout_width="@dimen/thirtyfive"
+            android:layout_height="@dimen/thirty"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/ten"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_baseline_menu_24" />
+
+        <LinearLayout
+            android:id="@+id/img_dash_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/lay_actions"
+            android:layout_toEndOf="@+id/img_menu"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/two">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/thirty"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/logo_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_actions"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/one"
+            android:layout_toStartOf="@+id/img_scancode"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/two">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/img_scancode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/one"
+            android:layout_marginRight="@dimen/ten"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/two">
+
+            <ImageView
+                android:layout_width="@dimen/thirtyfive"
+                android:layout_height="@dimen/thirty"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/support" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

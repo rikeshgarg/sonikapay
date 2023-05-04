@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE resources [<!ENTITY appname "VSI Digital"><!ENTITY package "com.vsi.vsidigital">]>
+
+<resources>
+    <string name="app_name">&appname;</string>
+    <string name="google_places_api_key">AIzaSyADq5v1NLygroKXwal-aDyQOcidx84rLpo</string>
+
+    <string name="file_provider_authority">&package;.provider</string>
+    <string name="label_ok">Ok</string>
+    <string name="label_cancel">Cancel</string>
+
+    <string name="internet_title">No Network Connection</string>
+    <string name="internet_msg">No Network Connection. Connect to the internet and try again</string>
+    <string name="internet_postivetext">Check Again</string>
+    <string name="internet_negativetext">Cancel</string>
+
+    <string name="permission_title_rationale">Permission needed</string>
+    <string name="permission_read_storage_rationale">Storage read permission is needed to pick files.</string>
+    <string name="permission_write_storage_rationale">Storage write permission is needed to save the image.</string>
+    <string name="permission_read_contacts_rationale">Read contacts permission is needed to fetch contacts.</string>
+
+    <string name="toast_cannot_retrieve_selected_image">Cannot retrieve selected image</string>
+    <string name="toast_cannot_retrieve_cropped_image">Cannot retrieve cropped image</string>
+    <string name="toast_unexpected_error">Unexpected error</string>
+
+    <string name="nonterworkconn">No network connection. Connect to the \ninternet and try again</string>
+    <string name="nointernet">No Internet connection</string>
+
+    <string name="splashpromotedtext">100% Safe and Secure</string>
+    <string name="splashpromotedby">Made with &#x2764; in India</string>
+
+    <string name="toolbar_forgotpwd">Forgot password</string>
+    <string name="toolbar_contact">Contact</string>
+
+    <string name="enterz_uploadhead">Click to select Picture</string>
+    <string name="label_takepicture">Take Picture</string>
+
+    <string name="comp_sbmtbtn">Submit</string>
+    <string name="comp_imgdesc">Please capture an image of error or detail so we can solve complaint as fast as possible</string>
+
+    <string name="SAVE">SAVE</string>
+    <string name="select_screenshot">Note: Image size should be 2MB and only .jpg.png format allowed.</string>
+    <string name="documents_kyc">Note: Image size should be 2MB and only .jpg.png format allowed.</string>
+    <string name="share">Now start earning by refer this app to your friens and family member.</string>
+    <string name="currency_symbol">₹</string>
+
+    <string name="demo_link"><u>Click here for Demo</u></string>
+    <string name="create_new"><u>Create New</u></string>
+
+    <string name="register">Register</string>
+    <string name="user_id">UserID/Mobile/EmailID*</string>
+    <string name="enter_user_id">Enter UserID/Mobile/EmailID</string>
+    <string name="password">Password*</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_confirm_password">Enter Confirm Password</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="login_now">Login Now</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="otp">OTP*</string>
+    <string name="cancel">Cancel</string>
+    <string name="verify">Verify</string>
+    <string name="send">Send</string>
+    <string name="member_id">Member ID*</string>
+    <string name="enter_member_id">Enter Member ID</string>
+    <string name="new_password">New Password*</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="confirm_password">Confirm Password*</string>
+    <string name="transaction_password">Transaction Password*</string>
+    <string name="enter_transaction_password">Enter Transaction Password</string>
+    <string name="referral_id">Referral Id*</string>
+    <string name="enter_referral_id">Enter Referral Id</string>
+    <string name="full_name">Full Name*</string>
+    <string name="enter_full_name">Enter Full Name</string>
+    <string name="email">Email*</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="mobile">Mobile*</string>
+    <string name="enter_mobile">Enter Mobile Number</string>
+    <string name="pan">PAN No.*</string>
+    <string name="enter_pan">Enter PAN No.</string>
+    <string name="re_enter_password">Re-enter password*</string>
+    <string name="enter_re_enter_password">Re-enter password</string>
+    <string name="transaction_password_4">Transaction Password*(4 Digit only)</string>
+
+
+
+
+
+
+</resources>

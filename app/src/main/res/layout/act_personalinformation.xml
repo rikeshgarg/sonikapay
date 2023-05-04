@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/headlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/lay_actionbar"
+            layout="@layout/include_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3c3c3c"
+            android:padding="@dimen/twenty" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lay_actionbar">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fillViewport="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/twohundred"
+                        android:layout_marginTop="@dimen/twenty"
+                        android:src="@drawable/change_pwd"
+                        android:visibility="gone" />
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/avatar"
+                        android:layout_width="@dimen/hundred"
+                        android:layout_height="@dimen/hundred"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/spacing_large"
+                        android:src="@drawable/users"
+                        app:civ_border_width="2dp"
+                        app:civ_shadow="true"
+                        app:civ_shadow_radius="0dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="20.0dip"
+                        android:text="Click image to change photo" />
+
+                    <EditText
+                        android:id="@+id/edt_PI_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginTop="20.0dip"
+                        android:layout_marginRight="20.0dip"
+                        android:background="@drawable/back_edittext_default"
+                        android:drawableLeft="@drawable/ic_baseline_person_24"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/colorPrimary"
+                        android:hint="Enter user fullname"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="9dp"
+                        android:paddingBottom="9dp"
+                        android:singleLine="true"
+                        android:textColor="@color/c_black"
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/c_gray2"
+                        android:textSize="@dimen/ts_seventeen" />
+
+                    <EditText
+                        android:id="@+id/edt_PI_mail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginTop="@dimen/twenty"
+                        android:layout_marginRight="20.0dip"
+                        android:background="@drawable/back_edittext_default"
+                        android:drawableLeft="@drawable/ic_baseline_mail_outline_24"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/colorPrimary"
+                        android:enabled="false"
+                        android:hint="Enter email address"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="9dp"
+                        android:paddingBottom="9dp"
+                        android:singleLine="true"
+                        android:textColor="@color/c_black"
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/c_gray2"
+                        android:textSize="@dimen/ts_seventeen" />
+
+                    <EditText
+                        android:id="@+id/edt_PI_mobnumber"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginTop="@dimen/twenty"
+                        android:layout_marginRight="20.0dip"
+                        android:background="@drawable/back_edittext_default"
+                        android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/colorPrimary"
+                        android:enabled="false"
+                        android:hint="Enter mobile number"
+                        android:inputType="phone"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="9dp"
+                        android:paddingBottom="9dp"
+                        android:singleLine="true"
+                        android:textColor="@color/c_black"
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/c_gray2"
+                        android:textSize="@dimen/ts_seventeen" />
+
+                    <EditText
+                        android:id="@+id/ed_address"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginTop="@dimen/twenty"
+                        android:layout_marginRight="20.0dip"
+                        android:background="@drawable/back_edittext_default"
+                        android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/colorPrimary"
+                        android:hint="Enter full address"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="9dp"
+                        android:paddingBottom="9dp"
+                        android:singleLine="true"
+                        android:textColor="@color/c_black"
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/c_gray2"
+                        android:textSize="@dimen/ts_seventeen" />
+
+                    <EditText
+                        android:id="@+id/ed_pincode"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginTop="@dimen/twenty"
+                        android:layout_marginRight="20.0dip"
+                        android:background="@drawable/back_edittext_default"
+                        android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/colorPrimary"
+                        android:hint="Enter Pincode"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="9dp"
+                        android:paddingBottom="9dp"
+                        android:singleLine="true"
+                        android:textColor="@color/c_black"
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/c_gray2"
+                        android:textSize="@dimen/ts_seventeen" />
+
+                    <RelativeLayout
+                        android:id="@+id/lay_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginTop="@dimen/twenty"
+                        android:layout_marginRight="20.0dip"
+                        android:background="@drawable/back_edittext_default"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/ten"
+                        android:paddingEnd="@dimen/five">
+
+                        <TextView
+                            android:id="@+id/txt_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:layout_toStartOf="@+id/img_drop1"
+                            android:gravity="center_vertical"
+                            android:text="Select State"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ts_seventeen" />
+
+                        <ImageView
+                            android:id="@+id/img_drop1"
+                            android:padding="@dimen/two"
+                            android:layout_marginRight="@dimen/ten"
+                            android:layout_width="@dimen/twentyfive"
+                            android:layout_height="@dimen/thirtyfive"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_arrow_drop"
+                            app:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lay_district"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginTop="@dimen/twenty"
+                        android:layout_marginRight="20.0dip"
+                        android:background="@drawable/back_edittext_default"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/ten"
+                        android:paddingEnd="@dimen/five">
+
+                        <TextView
+                            android:id="@+id/txt_district"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:layout_toStartOf="@+id/img_drop"
+                            android:gravity="center_vertical"
+                            android:text="Select District"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ts_seventeen" />
+
+                        <ImageView
+                            android:id="@+id/img_drop"
+                            android:padding="@dimen/two"
+                            android:layout_marginRight="@dimen/ten"
+                            android:layout_width="@dimen/twentyfive"
+                            android:layout_height="@dimen/thirtyfive"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_arrow_drop"
+                            app:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/ed_block"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginTop="@dimen/twenty"
+                        android:layout_marginRight="20.0dip"
+                        android:background="@drawable/back_edittext_default"
+                        android:drawableLeft="@drawable/ic_baseline_person_24"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/colorPrimary"
+                        android:hint="Enter block name"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="9dp"
+                        android:paddingBottom="9dp"
+                        android:singleLine="true"
+                        android:textColor="@color/c_black"
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/c_gray2"
+                        android:textSize="@dimen/ts_seventeen" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="3.0dip"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_PI_Update"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:layout_marginEnd="4dp"
+                            android:background="@drawable/blue_button_background"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:text="Update Profile"
+                            android:textColor="#ffffffff" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </RelativeLayout>
+
+        <include
+            layout="@layout/include_connection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#3c3c3c"
+            android:padding="@dimen/twenty" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

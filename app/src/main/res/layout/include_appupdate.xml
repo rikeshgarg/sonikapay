@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay_update"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/four">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@+id/btn_update"
+            android:paddingStart="@dimen/fifteen"
+            android:paddingTop="@dimen/four"
+            android:paddingEnd="@dimen/fifteen"
+            android:paddingBottom="@dimen/four"
+            android:text="An app update is available to download. Please click on the update to use the latesst features and updates"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ts_twelve"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/back_dash_card_btn"
+            android:paddingStart="@dimen/fifteen"
+            android:paddingTop="@dimen/four"
+            android:paddingEnd="@dimen/fifteen"
+            android:paddingBottom="@dimen/four"
+            android:text="Update App"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ts_forteen"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</FrameLayout>

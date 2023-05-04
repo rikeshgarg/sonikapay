@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/headlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/include_connection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#3c3c3c"
+            android:padding="@dimen/twenty" />
+
+        <include
+            android:id="@+id/lay_actionbar"
+            layout="@layout/include_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3c3c3c"
+            android:padding="@dimen/twenty" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lay_actionbar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ffffff"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.64">
+
+                    <ImageView
+                        android:layout_width="@dimen/twohundredfifty"
+                        android:layout_height="@dimen/forty"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="25dp"
+                        android:background="@drawable/logo_color"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <EditText
+                        android:id="@+id/ed_accountholder_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginRight="20.0dip"
+                        android:background="@drawable/back_edittext_default"
+                        android:drawableLeft="@drawable/ic_person"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/colorPrimary"
+                        android:hint="Account Holder Name"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="9dp"
+                        android:paddingBottom="9dp"
+                        android:singleLine="true"
+                        android:textColor="@color/c_black"
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/c_gray2"
+                        android:textSize="@dimen/ts_seventeen" />
+
+                    <EditText
+                        android:id="@+id/ed_account_number"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginTop="@dimen/nine"
+                        android:layout_marginRight="20.0dip"
+                        android:background="@drawable/back_edittext_default"
+                        android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/colorPrimary"
+                        android:hint="Account Number"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="9dp"
+                        android:paddingBottom="9dp"
+                        android:singleLine="true"
+                        android:textColor="@color/c_black"
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/c_gray2"
+                        android:textSize="@dimen/ts_seventeen" />
+
+                    <EditText
+                        android:id="@+id/ed_bank_ifsc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginTop="@dimen/nine"
+                        android:layout_marginRight="20.0dip"
+                        android:background="@drawable/back_edittext_default"
+                        android:drawableLeft="@drawable/ic_baseline_lock_24"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/colorPrimary"
+                        android:hint="IFSC"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="9dp"
+                        android:paddingBottom="9dp"
+                        android:singleLine="true"
+                        android:textColor="@color/c_black"
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/c_gray2"
+                        android:textSize="@dimen/ts_seventeen" />
+
+                    <EditText
+                        android:id="@+id/ed_bank_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginTop="@dimen/nine"
+                        android:layout_marginRight="20.0dip"
+                        android:background="@drawable/back_edittext_default"
+                        android:drawableLeft="@drawable/ic_baseline_lock_24"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/colorPrimary"
+                        android:hint="Bank Name"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="9dp"
+                        android:paddingBottom="9dp"
+                        android:singleLine="true"
+                        android:textColor="@color/c_black"
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/c_gray2"
+                        android:textSize="@dimen/ts_seventeen" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="3.0dip"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_submitcontact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="4dp"
+                            android:background="@drawable/blue_button_background"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:text="Submit"
+                            android:textColor="#ffffffff" />
+                    </LinearLayout>
+
+                    <include
+                        layout="@layout/include_demourl"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/five"
+                        android:background="#3c3c3c"
+                        android:padding="@dimen/twenty" />
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

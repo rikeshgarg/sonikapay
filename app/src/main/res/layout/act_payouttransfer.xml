@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/headlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/lay_actionbar"
+            layout="@layout/include_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3c3c3c"
+            android:padding="@dimen/twenty" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/lay_actionbar"
+            android:fillViewport="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:background="#ffffff"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.64">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/twohundred"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/seven"
+                    android:layout_marginBottom="@dimen/twenty"
+                    android:background="@drawable/transfer_header"
+                    android:padding="@dimen/ten"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <EditText
+                    android:id="@+id/edtMobile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="@dimen/seven"
+                    android:layout_marginRight="20.0dip"
+                    android:background="@drawable/back_edittext_noborder_dark"
+                    android:hint="Mobile Number"
+                    android:inputType="phone"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="9dp"
+                    android:paddingBottom="9dp"
+                    android:singleLine="true"
+                    android:textColor="@color/c_black"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/c_gray2"
+                    android:textSize="@dimen/ts_seventeen" />
+
+                <EditText
+                    android:id="@+id/edt__acc_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginRight="20.0dip"
+                    android:background="@drawable/back_edittext_noborder_dark"
+                    android:hint="Account holder Name"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="9dp"
+                    android:paddingBottom="9dp"
+                    android:singleLine="true"
+                    android:textColor="@color/c_black"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/c_gray2"
+                    android:textSize="@dimen/ts_seventeen" />
+
+
+                <EditText
+                    android:id="@+id/edt_acc_no"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginRight="20.0dip"
+                    android:background="@drawable/back_edittext_noborder_dark"
+                    android:hint="Account Number"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="9dp"
+                    android:paddingBottom="9dp"
+                    android:singleLine="true"
+                    android:textColor="@color/c_black"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/c_gray2"
+                    android:textSize="@dimen/ts_seventeen" />
+
+                <EditText
+                    android:id="@+id/edt_cnfrm_acc_no"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginRight="20.0dip"
+                    android:background="@drawable/back_edittext_noborder_dark"
+                    android:hint="Confirm Account Number"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="9dp"
+                    android:paddingBottom="9dp"
+                    android:singleLine="true"
+                    android:textColor="@color/c_black"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/c_gray2"
+                    android:textSize="@dimen/ts_seventeen" />
+
+                <EditText
+                    android:id="@+id/edt_ifsc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginRight="20.0dip"
+                    android:background="@drawable/back_edittext_noborder_dark"
+                    android:hint="IFSC Code"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="9dp"
+                    android:paddingBottom="9dp"
+                    android:singleLine="true"
+                    android:textColor="@color/c_black"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/c_gray2"
+                    android:textSize="@dimen/ts_seventeen" />
+
+                <EditText
+                    android:id="@+id/edt_amount_transfer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginRight="20.0dip"
+                    android:background="@drawable/back_edittext_noborder_dark"
+                    android:hint="Amount"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="9dp"
+                    android:paddingBottom="9dp"
+                    android:singleLine="true"
+                    android:textColor="@color/c_black"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/c_gray2"
+                    android:textSize="@dimen/ts_seventeen" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fortyfive"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginRight="20.0dip"
+                    android:background="@drawable/back_edittext_noborder_dark">
+
+                    <Spinner
+                        android:id="@+id/spinner_bank_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginRight="20.0dip"
+                        android:theme="@style/mySpinnerItemStyle" />
+
+                    <ImageView
+                        android:id="@+id/img_drop"
+                        android:layout_width="@dimen/twentyfive"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/five"
+                        android:src="@drawable/ic_arrow_drop"
+                        app:tint="@color/colorPrimary" />
+                </RelativeLayout>
+
+                <RadioGroup
+                    android:id="@+id/rg_txttype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/twenty"
+                    android:layout_marginRight="@dimen/twenty"
+                    android:orientation="vertical"
+                    android:paddingTop="9dp"
+                    android:paddingBottom="5dp">
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/radio_neft"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/five"
+                        android:buttonTint="@color/gray_35"
+                        android:checked="true"
+                        android:text="Neft\n*No Limit"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/grey_90" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/radio_imps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/gray_35"
+                        android:text="IMPS\n*Max 2 Lakh"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/grey_90" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/radio_rtgs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/gray_35"
+                        android:text="RTGS\n*Min 2 Lakh"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/grey_90" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginBottom="3.0dip"
+                    android:layout_weight="2"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnCancel"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/fortyfive"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/blue_button_background"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="cancel"
+                        android:textColor="#ffffffff" />
+
+                    <Button
+                        android:id="@+id/btn_SubmitMem"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/blue_button_background"
+                        android:backgroundTint="@color/c_orange"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="Transfer"
+                        android:textColor="#ffffffff" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <include
+            layout="@layout/include_connection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#3c3c3c"
+            android:padding="@dimen/twenty" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

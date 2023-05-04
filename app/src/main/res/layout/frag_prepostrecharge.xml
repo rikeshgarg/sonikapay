@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mylayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/threehundredsevcentyfifty"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/twohundred"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/recharge_footer"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="none"
+            android:scrollingCache="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/card_prepaidpostpaid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="@dimen/five"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="9dp"
+                        android:paddingRight="9dp"
+                        android:visibility="visible">
+
+                        <RadioGroup
+                            android:id="@+id/rg_mobilerechargetype"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/twentyfive"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/r_prepaid"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="15dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:checked="true"
+                                android:text="Prepaid"
+                                android:textSize="@dimen/ts_fifteen" />
+
+                            <RadioButton
+                                android:id="@+id/r_postpaid"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:checked="false"
+                                android:text="Postpaid"
+                                android:textSize="@dimen/ts_fifteen"
+                                android:visibility="gone" />
+                        </RadioGroup>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="@dimen/five"
+                            android:text="Enter Mobile Number"
+                            android:textSize="@dimen/ts_forteen" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/fortyfive"
+                            android:layout_marginTop="@dimen/twelve"
+                            android:background="@drawable/back_spinner">
+
+                            <TextView
+                                android:id="@+id/txt_country_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/ten"
+                                android:text="+91"
+                                android:textColor="@color/fontcoloreditext"
+                                android:textSize="@dimen/ts_seventeen" />
+
+                            <EditText
+                                android:id="@+id/edt_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/forty"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_toStartOf="@+id/img_contacts"
+                                android:layout_toEndOf="@+id/txt_country_number"
+                                android:backgroundTint="#ffffff"
+                                android:foregroundTint="@color/colorPrimary"
+                                android:inputType="phone"
+                                android:maxLength="10"
+                                android:textColor="@color/c_black"
+                                android:textCursorDrawable="@drawable/color_cursor"
+                                android:textSize="@dimen/ts_seventeen"
+                                app:hintTextColor="?attr/colorPrimary" />
+
+                            <ImageView
+                                android:id="@+id/img_contacts"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/seven"
+                                android:src="@drawable/ic_round_contacts_24"
+                                app:tint="@color/black" />
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/loadcontacts"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/ten"
+                            android:src="@drawable/premium"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/two"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_marginTop="@dimen/ten"
+                                    android:layout_marginBottom="@dimen/five"
+                                    android:text="Select circle"
+                                    android:textSize="@dimen/ts_forteen" />
+
+                                <RelativeLayout
+                                    android:id="@+id/lay_circle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/forty"
+                                    android:background="@drawable/back_spinner">
+
+                                    <Spinner
+                                        android:id="@+id/spinner_circlelist"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerHorizontal="true"
+                                        android:theme="@style/mySpinnerItemStyle" />
+
+                                    <ImageView
+                                        android:id="@+id/img_drop_1"
+                                        android:layout_width="@dimen/twentyfive"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center"
+                                        android:layout_marginRight="@dimen/five"
+                                        android:src="@drawable/ic_arrow_drop"
+                                        app:tint="@color/colorPrimary" />
+
+                                    <ProgressBar
+                                        android:id="@+id/progressbar_load_one"
+                                        android:layout_width="@dimen/sixty"
+                                        android:layout_height="@dimen/sixty"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginStart="@dimen/five"
+                                        android:layout_marginTop="@dimen/five"
+                                        android:layout_marginEnd="@dimen/five"
+                                        android:layout_marginBottom="@dimen/five"
+                                        android:indeterminateDrawable="@drawable/progress_icon" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/two"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_marginTop="@dimen/ten"
+                                    android:layout_marginBottom="@dimen/five"
+                                    android:text="Select operator"
+                                    android:textSize="@dimen/ts_forteen" />
+
+                                <RelativeLayout
+                                    android:id="@+id/lay_operator"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/forty"
+                                    android:background="@drawable/back_spinner">
+
+                                    <Spinner
+                                        android:id="@+id/spinner_operatorlist"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="match_parent"
+                                        android:theme="@style/mySpinnerItemStyle" />
+
+                                    <ImageView
+                                        android:id="@+id/img_drop_2"
+                                        android:layout_width="@dimen/twentyfive"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center"
+                                        android:layout_marginRight="@dimen/five"
+                                        android:src="@drawable/ic_arrow_drop"
+                                        app:tint="@color/colorPrimary" />
+
+                                    <ProgressBar
+                                        android:id="@+id/progressbar_load_two"
+                                        android:layout_width="@dimen/sixty"
+                                        android:layout_height="@dimen/sixty"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginStart="@dimen/five"
+                                        android:layout_marginTop="@dimen/five"
+                                        android:layout_marginEnd="@dimen/five"
+                                        android:layout_marginBottom="@dimen/five"
+                                        android:indeterminateDrawable="@drawable/progress_icon" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="@dimen/ten"
+                            android:layout_marginBottom="@dimen/five"
+                            android:text="Enter recharge amount"
+                            android:textSize="@dimen/ts_forteen" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/forty"
+                            android:background="@drawable/back_spinner">
+
+                            <TextView
+                                android:id="@+id/txt_currency"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="@dimen/ten"
+                                android:gravity="center_vertical"
+                                android:text="@string/currency_symbol"
+                                android:textColor="@color/gray_dimtextcolor"
+                                android:textSize="@dimen/ts_twentyfive" />
+
+                            <EditText
+                                android:id="@+id/txtSelectedRechargePlane"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/fortyfive"
+                                android:layout_marginStart="5dp"
+                                android:layout_toLeftOf="@+id/txt_viewallplans"
+                                android:layout_toRightOf="@+id/txt_currency"
+
+                                android:backgroundTint="#ffffff"
+                                android:foregroundTint="@color/colorPrimary"
+                                android:hint="Amount"
+                                android:inputType="text"
+                                android:maxLength="4"
+                                android:paddingLeft="@dimen/five"
+                                android:textColor="@color/c_black"
+                                android:textCursorDrawable="@drawable/color_cursor"
+                                app:hintTextColor="?attr/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/txt_viewallplans"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/ten"
+                                android:layout_marginRight="@dimen/ten"
+                                android:background="@color/colorPrimary"
+                                android:paddingLeft="@dimen/ten"
+                                android:paddingTop="@dimen/five"
+                                android:paddingRight="@dimen/ten"
+                                android:paddingBottom="@dimen/five"
+                                android:text="View plans"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/ts_fifteen"
+                                android:visibility="visible" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/five"
+                            android:background="@color/colorPrimary"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five">
+
+                            <TextView
+                                android:id="@+id/txt_roffers"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:padding="@dimen/seven"
+                                android:text="Click for R Offers"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/ts_fifteen"
+                                android:visibility="visible" />
+                        </RelativeLayout>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_prepaidrecharge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/ten"
+                            android:layout_marginBottom="3.0dip"
+                            android:background="@drawable/blue_button_background"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/thirty"
+                            android:paddingRight="@dimen/thirty"
+                            android:text="Confirm"
+                            android:textColor="#ffffffff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/card_otp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:background="#ffffff"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.64">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginBottom="4dp"
+                            android:background="@drawable/forget"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Enter Transcation Password!"
+                            android:textColor="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/edt_otp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/forty"
+                            android:layout_marginStart="@dimen/twentyfive"
+                            android:layout_marginEnd="@dimen/twentyfive"
+                            android:layout_toRightOf="@+id/txt_currency"
+                            android:background="@drawable/back_spinner"
+                            android:foregroundTint="@color/colorPrimary"
+                            android:hint="Enter Transcation Password"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:paddingLeft="@dimen/five"
+                            android:textColor="@color/c_black"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            app:hintTextColor="?attr/colorPrimary" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_otpcancel"
+                                android:layout_width="100dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="@dimen/five"
+                                android:background="@drawable/blue_button_background"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:text="Cancel"
+                                android:textColor="#ffffffff" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_otpauth"
+                                android:layout_width="100dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/five"
+                                android:background="@drawable/blue_button_background"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:text="Send"
+                                android:textColor="#ffffffff" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

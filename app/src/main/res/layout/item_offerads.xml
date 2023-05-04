@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/lyt_parent"
+    android:layout_height="@dimen/hundred">
+
+    <ImageView
+        android:id="@+id/img_ads"
+        android:layout_width="@dimen/twohundredfifty"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/three"
+        android:layout_marginRight="@dimen/three"
+        android:scaleType="fitXY"
+        android:src="@drawable/banner1" />
+</LinearLayout>

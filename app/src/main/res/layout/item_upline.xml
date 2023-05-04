@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lyt_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/five"
+        android:visibility="visible"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:id="@+id/lay_head_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/ten">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/two"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="20.0dip"
+
+                    android:layout_weight="4"
+                    android:background="@drawable/back_edittext_noborder_dark"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:enabled="false"
+                    android:paddingLeft="10dp"
+
+                    android:paddingTop="9dp"
+                    android:paddingBottom="9dp"
+                    android:singleLine="true"
+                    android:text="User Code"
+                    android:textColor="@color/c_black"
+                    android:textColorHighlight="@color/white"
+                    android:textSize="@dimen/ts_seventeen"
+
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dl_usercode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_weight="6"
+                    android:background="@drawable/back_edittext_noborder_dark"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:enabled="false"
+
+                    android:paddingLeft="10dp"
+                    android:paddingTop="9dp"
+                    android:paddingBottom="9dp"
+                    android:singleLine="true"
+                    android:textColor="@color/c_black"
+                    android:textColorHighlight="@color/white"
+
+                    android:textSize="@dimen/ts_seventeen"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/two"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_weight="4"
+                    android:background="@drawable/back_edittext_noborder_dark"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:enabled="false"
+                    android:paddingLeft="10dp"
+
+                    android:paddingTop="9dp"
+                    android:paddingBottom="9dp"
+                    android:singleLine="true"
+                    android:text="Name"
+                    android:textColor="@color/c_black"
+                    android:textColorHighlight="@color/white"
+
+                    android:textSize="@dimen/ts_seventeen"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dl_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_weight="6"
+                    android:background="@drawable/back_edittext_noborder_dark"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:enabled="false"
+
+                    android:paddingLeft="10dp"
+                    android:paddingTop="9dp"
+                    android:paddingBottom="9dp"
+                    android:singleLine="true"
+                    android:textColor="@color/c_black"
+                    android:textColorHighlight="@color/white"
+
+                    android:textSize="@dimen/ts_seventeen"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/two"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_weight="4"
+                    android:background="@drawable/back_edittext_noborder_dark"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:enabled="false"
+                    android:paddingLeft="10dp"
+
+                    android:paddingTop="9dp"
+                    android:paddingBottom="9dp"
+                    android:singleLine="true"
+                    android:text="Mobile"
+                    android:textColor="@color/c_black"
+                    android:textColorHighlight="@color/white"
+
+                    android:textSize="@dimen/ts_seventeen"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dl_mobile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_weight="6"
+                    android:background="@drawable/back_edittext_noborder_dark"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="9dp"
+                    android:paddingBottom="9dp"
+                    android:singleLine="true"
+                    android:textColor="@color/c_black"
+                    android:textColorHighlight="@color/white"
+                    android:textSize="@dimen/ts_seventeen"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

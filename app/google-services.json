@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "179838952401",
+    "project_id": "vsi-digital",
+    "storage_bucket": "vsi-digital.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179838952401:android:f1710771e9f9c4c801f6f0",
+        "android_client_info": {
+          "package_name": "com.vsi.vsidigital"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179838952401-7pk2bkl8hgq4l4trdis7t12fgclv6drv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vsi.vsidigital",
+            "certificate_hash": "db90694e77a64e645afaf1e3d0ccd92d7170a5cc"
+          }
+        },
+        {
+          "client_id": "179838952401-n8p56p1iki5l9a31fjv2lrd8rag3shia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkfHLjhP1iWVIseH2cmS0lfQQlo9J8J3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179838952401-n8p56p1iki5l9a31fjv2lrd8rag3shia.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

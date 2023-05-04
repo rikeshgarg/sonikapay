@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/headlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/lay_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbarheight"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="@dimen/fifty"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/twelve"
+                android:singleLine="true"
+                android:src="@drawable/ico_left" />
+
+            <LinearLayout
+                android:id="@+id/img_dash_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/fifteen"
+                android:layout_toRightOf="@+id/img_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/two">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/thirty"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/logo_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img_back"
+                    android:padding="@dimen/two"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/img_wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/ten"
+                android:layout_toLeftOf="@+id/img_ewallet"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/two"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/thirtyfive"
+                    android:layout_height="@dimen/thirty"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/rwallet" />
+
+                <TextView
+                    android:id="@+id/toolbar_txt_walletbal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ts_twelve"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/img_ewallet"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/two"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/thirtyfive"
+                    android:layout_height="@dimen/thirty"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ewallet" />
+
+                <TextView
+                    android:id="@+id/toolbar_txt_ewalletbal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ts_twelve"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay_actionbar"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/prepaid_and_semilar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/five"
+                android:orientation="vertical"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:paddingBottom="25dp">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:tabGravity="fill"
+                    app:tabMode="scrollable"
+                    app:tabPadding="@dimen/one" />
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/threehundredsevcentyfifty"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                <include
+                    layout="@layout/include_demourl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#3c3c3c"
+                    android:padding="@dimen/twenty" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/history_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginRight="@dimen/ten"
+                    android:scrollbars="vertical"
+                    android:scrollingCache="true" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+
+    <!--bottom sheet container-->
+    <FrameLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/bottom_sheet_behavior" />
+
+    <include
+        layout="@layout/include_connection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/twenty" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

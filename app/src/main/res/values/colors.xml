@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#053c50</color>
+    <color name="colorAccent">#e75581</color>
+    <color name="darkcolorPrimary">#102D39</color>
+    <color name="background">#F8F9FD</color>
+    <color name="background_hint">#4E4E4E</color>
+
+    <color name="colorPrimaryLight70">#B3053c50</color>
+    <color name="colorPrimaryLight40">#B3053c50</color>
+    <color name="colorPrimaryDark">#393186</color>
+
+    <color name="five_colorPrimaryDark">#0D053c50</color>
+    <color name="ten_colorPrimaryDark">#1A053c50</color>
+    <color name="eighty_colorPrimaryDark">#CC053c50</color>
+
+    <color name="appbackcolor">@color/colorPrimary</color>
+    <color name="fontcoloreditext">#000000</color>
+
+
+    <color name="fontcolortextview">#000000</color>
+    <color name="fontcoloractionbar">#ffffff</color>
+    <color name="fontcolorspinner">#000000</color>
+    <color name="fontcolorbutton">#ffffff</color>
+    <color name="buttonback">@color/theme_red</color>
+
+
+
+    <color name="dark_colorPrimary">#232323</color>
+    <color name="dark_colorPrimaryDark">#232323</color>
+    <color name="dark_colorAccent">#232323</color>
+    <color name="dark_fontcoloreditext">#ffffff</color>
+
+    <color name="dark_fontcolortextview">#ffffff</color>
+    <color name="dark_fontcolorbutton">#000000</color>
+
+    <color name="theme_red">#FF1F3D</color>
+    <color name="theme_redgradient_one">#FF1F3D</color>
+    <color name="theme_redgradient_two">#80101F</color>
+
+    <color name="cardview_dark_background">#FF424242</color>
+    <color name="cardview_light_background">#FFFFFFFF</color>
+    <color name="cardview_shadow_end_color">#03000000</color>
+    <color name="cardview_shadow_start_color">#37000000</color>
+
+    <color name="fontcolordark">#000000</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="ed_highlight_color">#1F211663</color>
+    <color name="darkgreen2">#008000</color>
+    <color name="green">#2ECC71</color>
+    <color name="fb">#3B5998</color>
+    <color name="google">#EA4335</color>
+    <color name="twitter">#1DA1F2</color>
+
+    <color name="red">#FF1F3D</color>
+
+    <color name="c_black">#000000</color>
+    <color name="c_gray1">#969696</color>
+    <color name="c_gray2">#999999</color>
+    <color name="c_orange">#a37128</color>
+    <color name="c_white">#e9f1fb</color>
+
+    <color name="redtransparent">#99FF1F3D</color>
+
+    <color name="transparentblack">#88000000</color>
+
+    <color name="material_black">@color/grey_90</color>
+
+    <color name="gray_dimtextcolor">#37474F</color>
+    <color name="offwhite">#ece8e1</color>
+    <color name="gray_35">#232323</color>
+    <color name="gray_46">#2e2e2e</color>
+    <color name="checkboxcolor">#8c8787</color>
+    <color name="dark_green">#19664a</color>
+
+    <color name="grey_3">#f7f7f7</color>
+    <color name="grey_10">#e6e6e6</color>
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_80">#37474F</color>
+    <color name="grey_90">#263238</color>
+
+
+    <!--Material color list from https://material.io/guidelines/style/color.html-->
+
+    <color name="red_400">#EF5350</color>
+    <color name="red_500">#F44336</color>
+    <color name="red_600">#E53935</color>
+    <color name="red_700">#D32F2F</color>
+    <color name="red_900">#B71C1C</color>
+
+    <color name="light_blue_50">#E1F5FE</color>
+
+    <color name="green_500">#4CAF50</color>
+    <color name="green_600">#43A047</color>
+    <color name="green_700">#388E3C</color>
+    <color name="green_800">#2E7D32</color>
+    <color name="green_900">#1B5E20</color>
+
+    <color name="yellow_900">#F57F17</color>
+
+    <color name="deep_orange_100">#FFCCBC</color>
+
+    <color name="blue_900">#0D47A1</color>
+
+    <color name="orange_900">#E65100</color>
+</resources>

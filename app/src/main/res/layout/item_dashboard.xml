@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/five">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/two">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/sixty"
+                android:layout_height="@dimen/sixty"
+                android:layout_centerInParent="true"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:layout_margin="@dimen/three"
+                app:cardCornerRadius="@dimen/thirtyfive"
+                app:cardElevation="@dimen/card_item_elevation">
+
+                <ImageView
+                    android:id="@+id/imgdrawable"
+                    android:layout_width="@dimen/fortyfive"
+                    android:layout_height="@dimen/fortyfive"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/two"
+                    android:padding="@dimen/ten"
+                    android:src="@drawable/bbps_bill" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/txt_notify_count"
+                android:layout_width="@dimen/twentyfive"
+                android:layout_height="@dimen/twentyfive"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/back_notification_counter"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="2"
+            android:minLines="2"
+            android:text="itemname"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ts_thirteen" />
+    </LinearLayout>
+</RelativeLayout>

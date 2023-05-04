@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="top"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/thirtyfive">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/seven"
+        android:layout_marginBottom="@dimen/seven"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/menuheader_dp"
+            android:layout_width="@dimen/seventy"
+            android:layout_height="@dimen/seventy"
+            android:layout_below="@+id/lay_top"
+            android:layout_marginLeft="@dimen/ten"
+            android:gravity="center_vertical"
+            android:padding="@dimen/four"
+            android:src="@drawable/users" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginRight="@dimen/five"
+            android:layout_marginTop="@dimen/five"
+            android:layout_toRightOf="@+id/menuheader_dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/menuheader_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="User name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ts_seventeen" />
+
+            <TextView
+                android:id="@+id/menuheader_memberid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="User memberid"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ts_fifteen" />
+
+            <TextView
+                android:id="@+id/menuheader_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="User Type"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ts_seventeen"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

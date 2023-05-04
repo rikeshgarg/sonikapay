@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/headlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/include_connection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#3c3c3c"
+            android:padding="@dimen/twenty" />
+
+        <include
+            android:id="@+id/lay_actionbar"
+            layout="@layout/include_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3c3c3c"
+            android:padding="@dimen/twenty" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/lay_actionbar"
+            android:fillViewport="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ffffff"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/twohundred"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/ten"
+                        android:layout_marginBottom="@dimen/twenty"
+                        android:background="@drawable/transfer_header"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <EditText
+                        android:id="@+id/edtcurrentwalletbal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="20.0dip"
+                        android:background="@drawable/back_edittext_noborder_dark"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/colorPrimary"
+                        android:enabled="false"
+                        android:hint="Current Wallet Balance"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="9dp"
+                        android:paddingBottom="9dp"
+                        android:singleLine="true"
+                        android:textColor="@color/c_black"
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/c_gray2"
+                        android:textSize="@dimen/ts_seventeen" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fortyfive"
+                        android:visibility="gone"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginRight="20.0dip"
+                        android:background="@drawable/back_spinner">
+
+
+                        <Spinner
+                            android:id="@+id/spinner_crdr"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_toLeftOf="@+id/img_drop_1"
+                            android:theme="@style/mySpinnerItemStyle" />
+
+                        <ImageView
+                            android:id="@+id/img_drop_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_arrow_drop"
+                            app:tint="@color/colorPrimary" />
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/edt_entermobile"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginTop="@dimen/ten"
+                        android:layout_marginRight="20.0dip"
+                        android:background="@drawable/back_edittext_noborder_dark"
+                        android:hint="Mobile number"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="9dp"
+                        android:paddingBottom="9dp"
+                        android:singleLine="true"
+                        android:textColor="@color/c_black"
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/c_gray2"
+                        android:textSize="@dimen/ts_seventeen" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fortyfive"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginRight="20.0dip"
+                        android:background="@drawable/back_edittext_noborder_dark">
+
+                        <Spinner
+                            android:id="@+id/spinner_memberlist"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:theme="@style/mySpinnerItemStyle" />
+
+                        <ImageView
+                            android:id="@+id/img_drop_2"
+                            android:layout_width="@dimen/twentyfive"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_arrow_drop"
+                            app:tint="@color/colorPrimary" />
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/edt_enteramount"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginRight="20.0dip"
+                        android:background="@drawable/back_edittext_noborder_dark"
+                        android:hint="Amount"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="9dp"
+                        android:paddingBottom="9dp"
+                        android:singleLine="true"
+                        android:textColor="@color/c_black"
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/c_gray2"
+                        android:textSize="@dimen/ts_seventeen" />
+
+                    <EditText
+                        android:id="@+id/edt_desc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginRight="20.0dip"
+                        android:background="@drawable/back_edittext_noborder_dark"
+                        android:gravity="top"
+                        android:hint="Description"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="9dp"
+                        android:paddingBottom="9dp"
+                        android:textColor="@color/c_black"
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/c_gray2"
+                        android:textSize="@dimen/ts_seventeen" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:background="@color/c_gray2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="3.0dip"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/btn_proceed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:layout_marginEnd="4dp"
+                            android:background="@drawable/blue_button_background"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:text="Proceed Transfer"
+                            android:textColor="#ffffffff" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="25dp"
+                    android:layout_marginBottom="15dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="#a00da5e9"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="9dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardCornerRadius="@dimen/ts_fifteen"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.45">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:background="#ffffff"
+                            android:foregroundGravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingBottom="10dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.64">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="25dp"
+                                android:layout_marginBottom="4dp"
+                                android:background="@drawable/forget"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:text="Enter Your OTP!"
+                                android:textColor="@color/colorPrimary" />
+
+                            <com.chaos.view.PinView
+                                android:id="@+id/edt_otp"
+                                style="@style/PinWidget.PinView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:cursorVisible="true"
+                                android:drawableTint="@color/colorPrimary"
+                                android:elevation="1dp"
+                                android:hint="OTP"
+                                android:inputType="number"
+                                android:padding="4dp"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="9dp"
+                                android:paddingBottom="9dp"
+                                android:singleLine="true"
+                                android:textColor="@color/c_black"
+                                android:textColorHighlight="@color/white"
+                                android:textColorHint="@color/c_gray2"
+                                android:textSize="17dp"
+                                android:textStyle="bold"
+                                app:cursorColor="@color/colorPrimary"
+                                app:cursorWidth="2dp"
+                                app:hideLineWhenFilled="true"
+                                app:itemCount="4"
+                                app:itemHeight="48dp"
+                                app:itemRadius="4dp"
+                                app:itemSpacing="0dp"
+                                app:itemWidth="48dp"
+                                app:lineColor="@color/colorPrimary"
+                                app:lineWidth="2dp"
+                                app:viewType="rectangle" />
+
+                            <Button
+                                android:id="@+id/btn_otpauth"
+                                android:layout_width="100dp"
+                                android:layout_height="@dimen/fortyfive"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="15dp"
+                                android:background="@drawable/blue_button_background"
+                                android:backgroundTint="@color/colorPrimary"
+
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:text="Send"
+                                android:textColor="#ffffffff" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

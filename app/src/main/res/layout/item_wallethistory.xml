@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lyt_parent"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/onetwentyfive"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/five"
+        android:layout_marginEnd="@dimen/five"
+        android:layout_marginBottom="@dimen/ten"
+        android:visibility="visible"
+        app:cardBackgroundColor="@color/colorPrimaryLight70"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/ten"
+            android:paddingTop="@dimen/seven"
+            android:paddingEnd="@dimen/ten"
+            android:paddingBottom="@dimen/seven">
+
+            <RelativeLayout
+                android:id="@+id/lay_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_ruppe_symbol"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginEnd="@dimen/seven"
+                    android:src="@drawable/img_rupee"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/lay_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/twentyfive"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/back_textviewlight_round"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/five"
+                    android:paddingEnd="@dimen/five">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/currency_symbol"
+                        android:textColor="@color/fontcolortextview"
+                        android:textSize="@dimen/ts_twenty"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/vm_memberid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/five"
+                        android:layout_marginEnd="@dimen/five"
+                        android:gravity="center"
+                        android:text="1000"
+                        android:textColor="@color/fontcolortextview"
+                        android:textSize="@dimen/ts_seventeen" />
+                </LinearLayout>
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/rechargedesc"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_toLeftOf="@+id/lay_amount"-->
+                <!--                    android:layout_toRightOf="@+id/img_ruppe_symbol"-->
+                <!--                    android:maxLines="3"-->
+                <!--                    android:textColor="@color/c_white" />-->
+
+                <LinearLayout
+                    android:id="@+id/lay_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/two"
+                    android:layout_marginBottom="@dimen/two"
+                    android:layout_toStartOf="@+id/lay_amount"
+                    android:layout_toEndOf="@+id/img_ruppe_symbol"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/lay_member_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/two"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="Member"
+                            android:textColor="@color/c_white"
+                            android:textSize="@dimen/ts_forteen"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/member_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:textColor="@color/c_white"
+                            android:textSize="@dimen/ts_forteen"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_transition_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/two"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Description"
+                            android:textColor="@color/c_white"
+                            android:textSize="@dimen/ts_forteen"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/rechargedesc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/four"
+                            android:ellipsize="marquee"
+                            android:fadingEdge="horizontal"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:textAlignment="center"
+                            android:textColor="@color/c_white"
+                            android:textSize="@dimen/ts_forteen"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/openbal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/two"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Opening Balance: "
+                            android:textColor="@color/c_white"
+                            android:textSize="@dimen/ts_forteen"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/openingbalance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/two"
+                            android:maxLines="1"
+                            android:textColor="@color/c_white"
+                            android:textSize="@dimen/ts_forteen"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/two"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Closing Balance: "
+                            android:textColor="@color/c_white"
+                            android:textSize="@dimen/ts_forteen"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/closingbalance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/two"
+                            android:maxLines="1"
+                            android:textColor="@color/c_white"
+                            android:textSize="@dimen/ts_forteen"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/vm_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="datetime"
+                    android:textColor="@color/c_white"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

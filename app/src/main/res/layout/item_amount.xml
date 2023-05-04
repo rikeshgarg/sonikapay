@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lyt_parent"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/thirtyfive"
+    android:layout_margin="@dimen/three"
+    app:cardBackgroundColor="@color/colorPrimaryLight70"
+    app:cardCornerRadius="@dimen/seven"
+    app:cardElevation="0dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/lay_head_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/two"
+        android:orientation="horizontal">
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/txt_amount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="300"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ts_seventeen" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

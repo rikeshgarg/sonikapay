@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/lay_demo_url"
+        android:layout_width="match_parent"
+        android:background="@drawable/back_demo_url"
+        android:layout_height="@dimen/forty"
+        android:orientation="horizontal">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/demo_link"
+            android:layout_marginLeft="@dimen/fifty"
+            android:padding="@dimen/two"
+            android:layout_width="@dimen/forty"
+            android:layout_height="@dimen/forty"/>
+
+        <me.grantland.widget.AutofitTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoLink="all"
+            android:gravity="center"
+            android:linksClickable="false"
+            android:maxLines="1"
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:text="@string/demo_link"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ts_seventeen"
+            android:textStyle="bold" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_marginRight="@dimen/fifty"
+            app:lottie_rawRes="@raw/demo_link"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/two"
+            android:layout_width="@dimen/forty"
+            android:layout_height="@dimen/forty"/>
+    </RelativeLayout>
+</FrameLayout>

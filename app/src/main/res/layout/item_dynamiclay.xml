@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/param_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fortyfive"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="#ffffff"
+        android:foregroundTint="@color/colorPrimary"
+        android:hint="K Number"
+        android:inputType="text"
+        android:textColor="@color/c_black"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="@dimen/ts_forteen"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:hintTextColor="?attr/colorPrimary" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/offwhite" />
+
+    <TextView
+        android:id="@+id/param_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/two"
+        android:text="Your service id is located on your tv menu on the bottom of screen"
+        android:textSize="@dimen/ts_twelve" />
+</LinearLayout>
